@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="public\styles.scss">
+    <title>Codesmith Confessions</title>
+</head>
+<body>
+    <main>
+        <h1><strong><</strong> Codesmith Confessions <strong>/></strong></h1>
+        <form action="/api" method="POST">
+            <textarea type="text" name="post" spellcheck="false" placeholder='// console.log("hello world!");' required></textarea>
+            <button>Submit</button>
+        </form>
+        <hr>
+        <div class="container"/>
+    </main>
+</body>
+<script>
+    const container = document.getElementsByClassName('container')[0];
+    const form = document.getElementsByTagName('form')[0];
+    const textarea = document.getElementsByTagName('textarea')[0];
+
+    fetch('/api')
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+        const { posts } = data; // data.confessions.posts
+        for (let i = 0; i < posts.length; i += 1) {
+            const confessionDiv = document.createElement('div');
+            confessionDiv.setAttribute('class', 'confession');
+            confessionDiv.innerHTML = `
+                <strong>${posts[i].title}</strong><br>
+                ${posts[i].post}
+            `;
+            container.appendChild(confessionDiv);
+        }
+    })
+
+    // fetch POST request with button click
+
+    // form.addEventListener('submit', (e) => e.preventDefault());
+</script>
+</html>

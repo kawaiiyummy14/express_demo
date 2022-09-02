@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "title": "Confession 1",
+      "post": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptas praesentium. Distinctio, veritatis, minus debitis cumque repudiandae velit culpa dolor saepe natus aut, amet consequuntur fuga magni sapiente blanditiis ab?",
+      "id": 1
+    },
+    {
+      "title": "Confession 2",
+      "post": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis iusto modi nihil dolorem eos quod error laborum aliquam dolores quas reprehenderit laudantium deserunt repellat odio quasi, delectus voluptas architecto. Nesciunt!",
+      "id": 2
+    },
+    {
+      "title": "Confession 3",
+      "post": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus optio ut, incidunt corrupti iste error, tenetur velit voluptatem delectus voluptates vel perferendis atque quos assumenda inventore adipisci voluptas nesciunt officia!",
+      "id": 3,
+      "hearts": 0,
+      "samesies": 0
+    },
+    {
+      "title": "Confession 4",
+      "post": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium maxime ad magni asperiores aut voluptatum, assumenda quaerat cumque sunt sint quae, nulla iusto facilis! Velit aspernatur quaerat maiores totam temporibus.",
+      "id": 4
+    },
+    {
+      "title": "Confession 5",
+      "post": "Dim Sum sounds good right about now",
+      "id": 5
+    },
+    {
+      "title": "Confession 6",
+      "post": "Test!",
+      "id": 6
+    }
+  ]
+}
